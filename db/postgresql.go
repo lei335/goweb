@@ -30,7 +30,7 @@ func ConnectPQ() (*sql.DB, error) {
 	}
 	fmt.Println("Connected!")
 
-	return db, nil
+	return pgdb, nil
 }
 
 func InsertData(user *UserInfo) (int, error) {
